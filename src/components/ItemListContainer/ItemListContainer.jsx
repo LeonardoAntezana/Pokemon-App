@@ -11,8 +11,7 @@ function ItemListContainer() {
     })
     const res = await Promise.all(listProms)
     setPokemons(res.map(poke => (
-      {id:poke.data.id , name: poke.data.name, image: poke.data.sprites['other']['official-artwork'].front_default,
-      types: [...poke.data.types], abilities: [...poke.data.abilities]})))
+      {id:poke.data.id , name: poke.data.name, image: poke.data.sprites.other.home.front_default, types: [...poke.data.types]})))
   }  
   useEffect(() => {
     getData()   

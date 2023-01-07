@@ -1,10 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import PokeCard from '../PokeCard/PokeCard'
 
 function ItemList({list}) {
   return (
     <div>
-      {list.map((elem, index) => <Link to={`/pokemon/${elem.id}`} key={index}><button>{elem.name}</button></Link>)}
+      {list.map((pokemon, index) => <PokeCard key={index} poke={pokemon}/>)}
     </div>
   )
 }
