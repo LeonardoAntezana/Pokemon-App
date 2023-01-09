@@ -2,6 +2,7 @@ import Stat from '../Stat/Stat';
 import styles from './ItemDetail.module.scss'
 
 function ItemDetail({ poke }) {
+  console.log(poke)
   const {id, name, images, stats, abilities, types} = poke;
   return (
     <div className={styles.detail}>

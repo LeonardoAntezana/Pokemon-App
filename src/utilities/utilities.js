@@ -9,3 +9,6 @@ export const dataAxios = async (url) => {
         console.log(err)
     }
 }
+
+
+export const filters = ['fire', 'water', 'flying', 'poison', 'bug', 'All']

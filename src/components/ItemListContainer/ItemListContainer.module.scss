@@ -6,6 +6,12 @@
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    .filters{
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        gap: 1rem;
+    }
     .container_pokemons{
         width: 100%;
         display: grid;
