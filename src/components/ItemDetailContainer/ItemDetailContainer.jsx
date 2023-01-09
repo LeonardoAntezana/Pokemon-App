@@ -2,6 +2,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import ItemDetail from '../ItemDetail/ItemDetail'
+import styles from './ItemDetailContainer.module.scss'
 
 function ItemDetailContainer() {
   const {idPokemon} = useParams()
@@ -18,8 +19,8 @@ function ItemDetailContainer() {
         }))
   }, [idPokemon])
   return (
-    <div>
-      <button><Link to='/'>Atras</Link></button>
+    <div className={styles.detail__container}>
+      <div><button><Link to='/'>Atras</Link></button></div>
       {pokemon && <ItemDetail poke={pokemon}/>}
     </div>
   )

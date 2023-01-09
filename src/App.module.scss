@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody&family=Rubik&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anybody', cursive;
+}
+
+.App{
+    background-color: antiquewhite;
+    min-height: 100vh;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+li{
+    list-style-type: none;
+}

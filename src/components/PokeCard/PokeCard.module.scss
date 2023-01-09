@@ -1,0 +1,24 @@
+.poke__card{
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    border-radius: 1rem;
+    img{
+        width: 80%;
+    }
+    .types{
+        width: 100%;
+        justify-content: space-around;
+        display: flex;
+
+    }
+    .container__buttonInfo{
+        .more__info{
+            background-color: antiquewhite;
+            border-radius: 1rem;
+        }
+    }
+}

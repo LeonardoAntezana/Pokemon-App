@@ -1,0 +1,26 @@
+.container{
+    width: 90%;
+    max-width: 1140px;
+    padding: 4rem 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    .container_pokemons{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+        gap: 3rem;
+    }
+}
+
+
+
+
+
+
+@media screen and (min-width: 900px){
+    .container{
+        flex-direction: row;
+    }
+}

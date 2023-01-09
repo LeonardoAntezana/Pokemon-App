@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { dataAxios } from "../../utilities/utilities"
 import ItemList from "../ItemsList/ItemList"
+import styles from './ItemListContainer.module.scss'
 
 function ItemListContainer() {
   const [pokemons, setPokemons] = useState([])
@@ -18,8 +19,9 @@ function ItemListContainer() {
   }, [])
 
   return (
-    <div>
-      {pokemons && <ItemList list={pokemons}/>}
+    <div className={styles.container}>
+        <div><button>Fire</button></div>
+        {pokemons && <ItemList list={pokemons}/>}
     </div>
   )
   }
